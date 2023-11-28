@@ -1,0 +1,17 @@
+D:\Training_Project\C#\OAWebAPI\Service\bin\Debug\net6.0\Service.deps.json
+D:\Training_Project\C#\OAWebAPI\Service\bin\Debug\net6.0\Service.dll
+D:\Training_Project\C#\OAWebAPI\Service\bin\Debug\net6.0\Service.pdb
+D:\Training_Project\C#\OAWebAPI\Service\obj\Debug\net6.0\Service.csproj.AssemblyReference.cache
+D:\Training_Project\C#\OAWebAPI\Service\obj\Debug\net6.0\Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\Training_Project\C#\OAWebAPI\Service\obj\Debug\net6.0\Service.AssemblyInfoInputs.cache
+D:\Training_Project\C#\OAWebAPI\Service\obj\Debug\net6.0\Service.AssemblyInfo.cs
+D:\Training_Project\C#\OAWebAPI\Service\obj\Debug\net6.0\Service.csproj.CoreCompileInputs.cache
+D:\Training_Project\C#\OAWebAPI\Service\obj\Debug\net6.0\Service.dll
+D:\Training_Project\C#\OAWebAPI\Service\obj\Debug\net6.0\refint\Service.dll
+D:\Training_Project\C#\OAWebAPI\Service\obj\Debug\net6.0\Service.pdb
+D:\Training_Project\C#\OAWebAPI\Service\obj\Debug\net6.0\ref\Service.dll
+D:\Training_Project\C#\OAWebAPI\Service\bin\Debug\net6.0\Domain.dll
+D:\Training_Project\C#\OAWebAPI\Service\bin\Debug\net6.0\Repository.dll
+D:\Training_Project\C#\OAWebAPI\Service\bin\Debug\net6.0\Repository.pdb
+D:\Training_Project\C#\OAWebAPI\Service\bin\Debug\net6.0\Domain.pdb
+D:\Training_Project\C#\OAWebAPI\Service\obj\Debug\net6.0\Service.csproj.CopyComplete

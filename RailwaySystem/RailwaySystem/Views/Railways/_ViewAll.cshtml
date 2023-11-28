@@ -1,0 +1,49 @@
+﻿@model IEnumerable<RailwaySystem.Models.Railway>
+
+<h1 class="text-center"><i class=" text-success"></i> Railway List</h1>
+<table class="table">
+    <thead class="thead-light">
+        <tr>
+            <th>@Html.DisplayNameFor(model=>model.TrainNo)</th>
+
+
+            <th>@Html.DisplayNameFor(model=>model.TrainName)</th>
+
+
+            <th>@Html.DisplayNameFor(model=>model.Schedule)</th>
+
+
+            <th>@Html.DisplayNameFor(model=>model.Source)</th>
+            <th>@Html.DisplayNameFor(model=>model.Destination)</th>
+
+            <th>
+                <a onclick="showInPopup('@Url.Action("AddOrEdit","Railways",null,Context.Request.Scheme)','New Employee')" class="btn btn-success text-white"><i class="fas fa-random"></i> New Train</a>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(model=>item.TrainNo)</td>
+
+                <td>@Html.DisplayFor(model=>item.TrainName)</td>
+
+                <td>@Html.DisplayFor(model=>item.Schedule)</td>
+
+                <td>@Html.DisplayFor(model=>item.Source)</td>
+                <td>@Html.DisplayFor(model=>item.Destination)</td>
+
+
+                <td>
+                    <div>
+                        <a onclick="showInPopup('@Url.Action("AddOrEdit","Railways",new {id=item.TrainId},Context.Request.Scheme)','Update Transaction')" class="btn btn-info text-white"><i class="fas fa-pencil-alt"></i> Edit</a>
+                        <form asp-action="Delete" asp-route-id="@item.TrainId" onsubmit="return jQueryAjaxDelete(this)" class="d-inline">
+                            <input type="submit" value="Delete" class="btn btn-danger" />
+                        </form>
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

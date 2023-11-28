@@ -1,0 +1,60 @@
+﻿@model RailwaySystem.Models.Railway
+
+<div class="row">
+    <div class="col-md-10">
+        <form asp-action="AddOrEdit" asp-route-id="@Model.TrainId" onsubmit="return jQueryAjaxPost(this);">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="TrainId" />
+            <div class="form-group">
+                <label asp-for="TrainNo" class="control-label"></label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">#</div>
+                    </div>
+                    <input asp-for="TrainNo" class="form-control" />
+                </div>
+                <span asp-validation-for="TrainNo" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="TrainName" class="control-label"></label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">#</div>
+                    </div>
+                    <input asp-for="TrainName" class="form-control" />
+                </div>
+                <span asp-validation-for="TrainName" class="text-danger"></span>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="Schedule" class="control-label"></label>
+                        <input asp-for="Schedule" class="form-control" />
+                        <span asp-validation-for="Schedule" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="Source" class="control-label"></label>
+                        <input asp-for="Source" class="form-control" />
+                        <span asp-validation-for="Source" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="Destination" class="control-label"></label>
+                        <input asp-for="Destination" class="form-control" />
+                        <span asp-validation-for="Destination" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-10 offset-md-3">
+                    <input type="submit" value="Submit" class="btn btn-primary btn-block" />
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

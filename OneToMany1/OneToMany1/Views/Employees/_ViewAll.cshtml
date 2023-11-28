@@ -1,0 +1,45 @@
+﻿@model IEnumerable<OneToMany1.Models.Employee>
+
+    <h1 class="text-center">Employee List</h1>
+    <table class="table">
+        <thead>
+            <tr>
+            <th>@Html.DisplayNameFor(model=>model.EmpId)</th>
+
+            <th>@Html.DisplayNameFor(model=>model.EmpName)</th>
+            <th>@Html.DisplayNameFor(model=>model.Location)</th>
+            <th>@Html.DisplayNameFor(model=>model.DateOfJoining)</th>
+            <th>@Html.DisplayNameFor(model=>model.Gender)</th>
+            <th>@Html.DisplayNameFor(model=>model.State)</th>
+            <th>@Html.DisplayNameFor(model=>model.Country)</th>
+            <th>@Html.DisplayNameFor(model=>model.PostalCode)</th>
+            <th>@Html.DisplayNameFor(model=>model.Education)</th>
+            <th>@Html.DisplayNameFor(model=>model.Department.DepName)</th>
+            <a onclick="showInPopup('@Url.Action("AddOrEdit","Employees",null,Context.Request.Scheme)','New Employee')" class="btn btn-success text-white"><i class="fas fa-random"></i>New Employee</a>
+
+
+            </tr>
+        </thead>
+        <tbody>
+        @foreach(var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayNameFor(model=>model.EmpId)</td>
+
+                <td>@Html.DisplayNameFor(model=>model.EmpName)</td>
+                <td>@Html.DisplayNameFor(model=>model.Location)</td>
+                <td>@Html.DisplayNameFor(model=>model.DateOfJoining)</td>
+                <td>@Html.DisplayNameFor(model=>model.Gender)</td>
+                <td>@Html.DisplayNameFor(model=>model.State)</td>
+                <td>@Html.DisplayNameFor(model=>model.Country)</td>
+                <td>@Html.DisplayNameFor(model=>model.PostalCode)</td>
+                <td>@Html.DisplayNameFor(model=>model.Education)</td>
+                <td>@Html.DisplayNameFor(model=>model.Department.DepName)</td>
+                <a onclick="showInPopup('@Url.Action("AddOrEdit","Employees",new {id=item.EmpId},Context.Request.Scheme)','Update Enployee')" class="btn btn-info text-white"><i class="fas fa-pencil-alt"></i> Edit</a>
+                <form asp-action="Delete" asp-route-id="@item.EmpId" onsubmit="return jQueryAjaxDelete(this)" class="d-inline">
+                    <input type="submit" value="Delete" class="btn btn-danger">
+                </form>
+            </tr>
+        }
+        </tbody>
+    </table>

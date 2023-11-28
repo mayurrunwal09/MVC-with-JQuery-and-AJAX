@@ -1,0 +1,53 @@
+﻿@model IEnumerable<StudentModel.Models.Student>
+
+<h1 class="text-center"><i class=" text-success"></i> Employee History</h1>
+<table class="table">
+    <thead class="thead-light">
+        <tr>
+            <th>@Html.DisplayNameFor(model=>model.StudentId)</th>
+
+
+            <th>@Html.DisplayNameFor(model=>model.StudentName)</th>
+
+
+            <th>@Html.DisplayNameFor(model=>model.StudentAge)</th>
+
+
+            <th>@Html.DisplayNameFor(model=>model.Gender)</th>
+
+             <th>@Html.DisplayNameFor(model=>model.Address)</th>
+
+            <th>@Html.DisplayNameFor(model=>model.Contactno)</th>
+            <th>
+                <a onclick="showInPopup('@Url.Action("AddOrEdit","Student",null,Context.Request.Scheme)','New Employee')" class="btn btn-success text-white"><i class="fas fa-random"></i> New Employee</a>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(model=>item.StudentId)</td>
+
+                <td>@Html.DisplayFor(model=>item.StudentName)</td>
+
+                <td>@Html.DisplayFor(model=>item.StudentAge)</td>
+
+                <td>@Html.DisplayFor(model=>item.Gender)</td>
+                <td>@Html.DisplayFor(model=>item.Address)</td>
+
+                <td>@Html.DisplayFor(model=>item.Contactno)</td>
+
+
+                <td>
+                    <div>
+                        <a onclick="showInPopup('@Url.Action("AddOrEdit","Student",new {id=item.StudentId},Context.Request.Scheme)','Update Transaction')" class="btn btn-info text-white"><i class="fas fa-pencil-alt"></i> Edit</a>
+                        <form asp-action="Delete" asp-route-id="@item.StudentId" onsubmit="return jQueryAjaxDelete(this)" class="d-inline">
+                            <input type="submit" value="Delete" class="btn btn-danger" />
+                        </form>
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

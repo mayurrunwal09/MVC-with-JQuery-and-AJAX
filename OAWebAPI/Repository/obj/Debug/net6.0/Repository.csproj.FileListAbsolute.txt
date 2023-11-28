@@ -1,0 +1,17 @@
+D:\Training_Project\C#\OAWebAPI\Repository\bin\Debug\net6.0\Repository.deps.json
+D:\Training_Project\C#\OAWebAPI\Repository\bin\Debug\net6.0\Repository.runtimeconfig.json
+D:\Training_Project\C#\OAWebAPI\Repository\bin\Debug\net6.0\Repository.dll
+D:\Training_Project\C#\OAWebAPI\Repository\bin\Debug\net6.0\Repository.pdb
+D:\Training_Project\C#\OAWebAPI\Repository\bin\Debug\net6.0\Domain.dll
+D:\Training_Project\C#\OAWebAPI\Repository\bin\Debug\net6.0\Domain.pdb
+D:\Training_Project\C#\OAWebAPI\Repository\obj\Debug\net6.0\Repository.csproj.AssemblyReference.cache
+D:\Training_Project\C#\OAWebAPI\Repository\obj\Debug\net6.0\Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\Training_Project\C#\OAWebAPI\Repository\obj\Debug\net6.0\Repository.AssemblyInfoInputs.cache
+D:\Training_Project\C#\OAWebAPI\Repository\obj\Debug\net6.0\Repository.AssemblyInfo.cs
+D:\Training_Project\C#\OAWebAPI\Repository\obj\Debug\net6.0\Repository.csproj.CoreCompileInputs.cache
+D:\Training_Project\C#\OAWebAPI\Repository\obj\Debug\net6.0\Repository.csproj.CopyComplete
+D:\Training_Project\C#\OAWebAPI\Repository\obj\Debug\net6.0\Repository.dll
+D:\Training_Project\C#\OAWebAPI\Repository\obj\Debug\net6.0\refint\Repository.dll
+D:\Training_Project\C#\OAWebAPI\Repository\obj\Debug\net6.0\Repository.pdb
+D:\Training_Project\C#\OAWebAPI\Repository\obj\Debug\net6.0\Repository.genruntimeconfig.cache
+D:\Training_Project\C#\OAWebAPI\Repository\obj\Debug\net6.0\ref\Repository.dll
